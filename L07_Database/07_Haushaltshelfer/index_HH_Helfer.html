@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style_HH_Helfer.css" type="text/css" media="screen" />
+    <script src="./04GenerateContent.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./HH_Helfer.js" type="text/javascript" charset="utf-8"></script>
+    <title>07_Dein Haushaltshelfer</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Haushaltshilfe</h1>
+        <p>Auf der linken Seite kannst du deine
+            Erledigungen wählen und auf der rechten Seite siehst du die Übersicht</p>
+        <span>Erledigungen</span>
+    </header>
+
+    <form id="orderform" method="GET">
+        <div>
+
+            <!--****************************************************-->
+
+            <fieldset id="Einkäufe">
+                <legend>Einkäufe</legend>
+                 <!--<label for="Menge">Menge:</label>
+                <input type="number" name="Menge" id="Menge" max="10"> -->
+            
+               
+                <button type="reset" form="Einkäufe">RESET</button>
+            </fieldset>
+            <!--****************************************************-->
+
+            <fieldset id="Einzelhandel">
+                <legend>Einzelhandel</legend>
+               
+                <button type="reset" form="orderform">RESET</button>
+            </fieldset>
+            <!--****************************************************-->
+
+            <fieldset id="Haushaltsarbeiten">
+                <legend>Haushaltsarbeiten</legend>
+               
+                <button type="reset" form="Haushaltsarbeiten">RESET</button>
+            </fieldset>
+            <!--****************************************************-->
+
+            <fieldset id="Bank-Geschäfte">
+                <br>
+                <legend>Bank-Geschäfte</legend>
+                <label for="Geld einzahlen">Geld einzahlen:</label>
+                <input type="number" name="Einzahlen" id="Einzahlen" max="1.000">
+                <label for="Geld abheben">Geld abheben:</label>
+                <input type="number" name="Abheben" id="Abheben" max="1.000"> <br><br>
+                <input type="radio" name="Zahlungsweise" id="Bar" value="Bar" />
+                <label for="Bar">Bar</label>
+                <input type="radio" name="Zahlungsweise" id="Überweisung" value="Überweisung"/>
+                <label for="Überweisung">Überweisung</label>
+                <input type="radio" name="Zahlungsweise" id="Bankeinzug" value="Bankeinzug" />
+                <label for="Bankeinzug">Bankeinzug</label> <br><br>
+               
+                <button type="reset" form="Bank-Geschäfte">RESET</button>
+            </fieldset>
+
+        </div>
+
+    </form>
+
+
+
+    <div id="Erledigungen"></div>
+
+    <button type="button" form="orderform" id="Senden-Btn">Senden</button>
+    <button id="delete">Löschen</button>
+</body>
+
+</html>
