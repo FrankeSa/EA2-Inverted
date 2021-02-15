@@ -1,0 +1,23 @@
+{
+  "name": "ea2-inverted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^3.5.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Wiederholung/Formular_Hexenkessel/Server.js remote"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankeSa/EA2-Inverted.git"
+  },
+  "author": "Sarah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankeSa/EA2-Inverted/issues"
+  },
+  "homepage": "https://github.com/FrankeSa/EA2-Inverted#readme"
+}
