@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style_HH_Helfer.css" type="text/css" media="screen" />
+    <script src="./HH_Helfer.js" type="text/javascript" charset="utf-8"></script>
+    <title>Dein Haushaltshelfer</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Haushaltshilfe</h1>
+        <p>Auf der linken Seite kannst du deine 
+        Erledigungen wählen und auf der rechten Seite siehst du die Übersicht</p>
+        <span>Erledigungen</span>
+    </header>
+
+    <form>
+        <div id="form">
+            <fieldset>
+                <legend>Einkäufe</legend>
+                <legend>Artikel</legend>
+                <input type="text" name="Artikel" list="options" placeholder="Wähle einen Artikel aus" multiple/>
+                <datalist id="options">
+                    <option value="Butter" price="0"></option>
+                    <option value="Milch"price="0"> </option>
+                    <option value="Brot"price="0"></option>
+                    <option value="Müsli"price="0"> </option>
+                    <option value="Eier"price="0"> </option>
+                    <option value="Wurst"price="0"> </option>
+                    <option value="Kaffe"price="0"> </option>
+                </datalist>
+                <legend>Menge</legend>
+                <select name="Menge">
+                    <option value="Menge wählen">Menge wählen</option>
+                    <option value="Liter 1" price="0.40">Liter 1</option>
+                    <option value="Stück 1" price="1.00">Stück 1 </option>
+                    <option value="Stück 2" price="3.00">Stück 2</option>
+                    <option value="Gramm 500" price="1.50">Gramm 500</option>
+                    <option value="Packung 1" price="2.50">Packung 1</option>
+                </select>
+                <legend>Einzelhandel</legend>
+                <select name="Einzelhandel">
+                    <option value="Einzelhandel wählen">Einzelhandel wählen</option>
+                    <option value="Edeka">Edeke</option>
+                    <option value="Lidl">Lidl</option>
+                    <option value="Aldi">Aldi</option>
+                    <option value="REWE">REWE</option>
+                    <option value="Dens Biomarkt">Dens Biomarkt</option>
+                </select>
+                <button id="fs1">Löschen</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Haushaltsarbeiten</legend>
+                <input type="checkbox" name="Haushaltsarbeiten" id="Rasen mähen" value="Rasen mähen" price="15.00">
+                <label for="Rasen mähen">Rasen mähen (15€)</label>
+                <input type="checkbox" name="Haushaltsarbeiten" id="Wischen" value="Wischen" price="10.00">
+                <label for="Wischen">Wischen (10€)</label>
+                <input type="checkbox" name="Haushaltsarbeiten" id="Staubsaugen" value="Staubsaugen" price="10.00">
+                <label for="Staubsaugen">Staubsaugen (10€)</label>
+                <input type="checkbox" name="Haushaltsarbeiten" id="Wäsche waschen" value="Wäsche waschen" price="15.00">
+                <label for="Wäsche waschen">Wäsche waschen (15€)</label>
+                <button id="fs2">Löschen</button>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Bank-Geschäfte</legend>
+                <label for="Geld einzahlen">Geld einzahlen:</label>
+                <input type="number" name="Einzahlen" id="Einzahlen">
+                <label for="Geld abheben">Geld abheben:</label>
+                <input type="number" name="Abheben" id="Abheben"> <br><br>
+                <input type="radio" name="Zahlungsweise" id="Bar" value="Bar" price="3.50" checked />
+                <label for="Bar">Bar</label>
+                <input type="radio" name="Zahlungsweise" id="Überweisung" value="Überweisung" price="4.00" />
+                <label for="Überweisung">Überweisung</label>
+                <input type="radio" name="Zahlungsweise" id="Bankeinzug" value="Bankeinzug" price="0.20" />
+                <label for="Bankeinzug">Bankeinzug</label>
+                <button id="fs3">Löschen</button>
+            </fieldset>
+
+        </div>
+
+    </form>
+
+
+
+    <div id="Erledigungen"></div>
+    
+    <button id="Senden-Btn">Senden</button>
+    <button id="Erl_Btn_2">Löschen</button>
+</body>
+
+</html>

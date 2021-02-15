@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style_HH_Helfer.css" type="text/css" media="screen" />
+    <script src="./04HH_Data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./04GenerateContent.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./HH_Helfer.js" type="text/javascript" charset="utf-8"></script>
+    <title>Dein Haushaltshelfer</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Haushaltshilfe</h1>
+        <p>Auf der linken Seite kannst du deine 
+        Erledigungen wählen und auf der rechten Seite siehst du die Übersicht</p>
+        <span>Erledigungen</span>
+    </header>
+
+    <form>
+        <div id="form">
+
+<!--****************************************************-->
+            <fieldset id = "Einkäufe">
+            <legend>Einkäufe</legend>
+                <button type="Button" id="fs1">Löschen</button>
+            </fieldset>
+<!--****************************************************-->
+            <fieldset id = "Einzelhandel">
+                <legend>Einzelhandel</legend>
+               <button  type="Button" >Löschen</button>
+            </fieldset>
+<!--****************************************************-->
+            <fieldset id = "Haushaltsarbeiten">
+                <legend>Haushaltsarbeiten</legend>
+                <button  type="Button" >Löschen</button>
+            </fieldset>
+<!--****************************************************-->
+                <fieldset id = "Bank-Geschäfte">
+                <legend>Bank-Geschäfte</legend>
+                <label for="Geld einzahlen">Geld einzahlen:</label>
+                <input type="number" name="Einzahlen" id="Einzahlen">
+                <label for="Geld abheben">Geld abheben:</label>
+                <input type="number" name="Abheben" id="Abheben"> <br><br>
+                <input type="radio" name="Zahlungsweise" id="Bar" value="Bar"/>
+                <label for="Bar">Bar</label>
+                <input type="radio" name="Zahlungsweise" id="Überweisung" value="Überweisung"/>
+                <label for="Überweisung">Überweisung</label>
+                <input type="radio" name="Zahlungsweise" id="Bankeinzug" value="Bankeinzug"/>
+                <label for="Bankeinzug">Bankeinzug</label>
+                <button  type="Button" >Löschen</button>
+            </fieldset>
+
+        </div>
+
+    </form>
+
+
+
+    <div id="Erledigungen"></div>
+    
+    <button id="Senden-Btn">Senden</button>
+    <button id="Erl_Btn_2">Löschen</button>
+</body>
+
+</html>
